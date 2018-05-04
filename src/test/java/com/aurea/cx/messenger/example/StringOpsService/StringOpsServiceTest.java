@@ -31,4 +31,9 @@ public class StringOpsServiceTest {
     public final void convertTest() {
         assertEquals(22.22f, service.convert(72), 0.1);
     }
+    
+    @Test
+    public final void compareTest() {
+        assertEquals(true,service.compare("Java", "Java"));
+    }
 }

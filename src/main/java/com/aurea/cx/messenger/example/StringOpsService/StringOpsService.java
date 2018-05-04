@@ -74,6 +74,16 @@ public class StringOpsService {
         return (fahrenheit - 32) * 5 / 9;
     }
     
-
+    /**
+     * Operation: boolean compare(String, String)
+     */
+     @Operation(description = "Split string")
+     public boolean compare(final String str1, final String str2) {
+         if (isVerbose()) {
+             log.info("compare called with parameters str1={"+str1+"} and str2={"+str2+"}");
+         }
+        
+         return str1.equalsIgnoreCase(str2);
+     }
 
 }  
